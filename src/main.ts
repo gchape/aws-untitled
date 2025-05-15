@@ -6,7 +6,7 @@ document.getElementById("app")?.appendChild(answer);
 
 const id = setInterval(async () => {
   const { data }: { data: string } = await fetch(
-    `http://localhost:3001/api/answer`
+    `http://16.171.33.9:3001/api/answer`
   )
     .then((res) => res.json())
     .catch(() => undefined);
