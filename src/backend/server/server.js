@@ -24,6 +24,6 @@ server.get("/api/answer", (_, res) => {
   res.json({ data: latest });
 });
 
-server.listen(port, () => {
-  console.log(`Server is listening at http://localhost:${port}`);
+server.listen(port, "0.0.0.0", () => {
+  console.log(`Server is listening at http://0.0.0.0:${port}`);
 });
